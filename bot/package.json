@@ -1,0 +1,34 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "monitor": "tsx src/edge-monitor.ts",
+    "execute": "tsx src/executor.ts",
+    "execute:dry": "DRY_RUN=true tsx src/executor.ts",
+    "setup-keys": "tsx src/scripts/setup-keys.ts",
+    "approve": "tsx src/scripts/approve-usdc.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@polymarket/clob-client": "^5.8.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.4.0",
+    "@types/ws": "^8.18.1",
+    "better-sqlite3": "^12.6.2",
+    "ethers": "^6.16.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "vitest": "^4.0.18"
+  }
+}
